@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width:300px;
+	height: 300px;
+	margin: 0 auto;
+	font-family: 'Rancho', cursive;
+	margin-top: 40px;
+}
+
+.wrapper #title{
+	font-size: 27px;
+	padding-top: 50px;
+	color: black;
+	text-align: center;
+	text-shadow: 1px 1px 1px #808080;
+}
+.wrapper p{
+	font-size: 18px;
+	color: #A9A9A9;
+	text-align: center;
+}
+.item-list{
+	list-style: none;
+	margin-top: 15px;
+	font-size: 22px;
+	margin-left:15px;
+}
+.item-list li{
+	margin-right: 40px;
+	border-bottom: 1px solid #A9A9A9;
+}
+.star{
+	display: inline-block;
+	margin-right: 5px;
+}
+.item-delete{
+	display: inline-block;
+	font-size: 12px;
+	color: #A9A9A9;
+	font-family: Arial, sans-serif;
+}
+.item-delete:hover{
+	cursor: pointer;
+	color: black;
+}
+input[type="text"] {
+	outline: none;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-family: 'Rancho', cursive;
+	font-size: 15px;
+	padding-left: 7px;
+	color: #A9A9A9;
+	width:130px;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,1);
+	margin-left:65px;
+}
+.edit{
+	margin-left:7px;
+}
+.edit, .item-add:hover{
+	cursor: pointer;
+}
+.controlls{
+	margin-top: 20px;
+}
+.item-add, .edit{
+	outline: none;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 3px;
+	padding: 0 4px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,1);
+}

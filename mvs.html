@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MVC</title>
+	<script src="js/tmpl.js"></script>
+	<script data-main="js/app" src="js/require.js"></script>
+	<link rel="stylesheet" href="css/mvc.css">
+	<link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+</head> 
+<body>
+	<script type="text/template" id="wrapper-template">
+   <div class="wrapper">
+		<p id="title">ToDoList presents...</p>
+		<p>(put here whatever you want)</p>
+		<ul class="item-list"></ul>
+		<div class="controlls">
+			<input type="text" class="item-value">
+			<button class="item-add">add</button>
+		</div>
+   </div>
+   </script>
+   
+      <script type="text/template" id="list-template">
+			<% for (var i = 0; i < data.length; i++){ %>
+						
+			<li><span class="star">*</span><%= data[i] %> <span data-value="<%= data[i] %>"class="item-delete">x</span><button data-value="<%= data[i] %>" class="edit">edit</span></li>
+			
+			<%};%>
+	  </script>
+	  
+</body>
+</html>
